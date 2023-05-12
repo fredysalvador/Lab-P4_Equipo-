@@ -33,10 +33,11 @@ public class Lab2P4_Equipo4 {
 
             if (opcion == 1) {
                 int eleccion = 0;
-                while (eleccion != 3) {
+                while (eleccion != 4) {
                     eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Ingeniero\n"
                             + "2-Agregar un Primate"
-                            + "\n3-Salir"));
+                            + "\n3-Listar todos los Seres"
+                            + "\n4-Salir"));
 
                     if (eleccion == 1) {
                         Ingenieros I = new Ingenieros(Integer.parseInt(JOptionPane.showInputDialog("Ingrese su RRHH:")),
@@ -52,17 +53,49 @@ public class Lab2P4_Equipo4 {
                                 Integer.parseInt(JOptionPane.showInputDialog("Ingrese su Peso:")));
                         Primates.add(P);
                     }
+
+                    if (eleccion == 3) {
+                        String mensaje = "Lista de Seres Vivos:\n";
+                        for (Object t : Ingenieros) {
+
+                            mensaje += t + "\n";
+
+                        }
+
+                        for (Object t : Primates) {
+
+                            mensaje += t + "\n";
+
+                        }
+
+                        JOptionPane.showMessageDialog(null, mensaje);
+
+                    }
                 }
             } else if (opcion == 2) {
                 int eleccion = 0;
-                while (eleccion != 2) {
-                    eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Planeta\n"
-                            + "\n2-Salir"));
+                while (eleccion != 3) {
+                    eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Planeta"
+                            + "\n2-Mostrar Planetas"
+                            + "\n3-Salir"));
                     if (eleccion == 1) {
                         Planetas PL = new Planetas(JOptionPane.showInputDialog("Ingrese el Nombre del Planeta: "),
                                 Double.valueOf(JOptionPane.showInputDialog("Ingrese la Distancia desde la Tierra")));
                         Planetas.add(PL);
                     }
+
+                    if (eleccion == 2) {
+                        String mensaje = "Lista de Planetas:\n";
+                        for (Object t : Planetas) {
+
+                            mensaje += t + "\n";
+
+                        }
+
+                        JOptionPane.showMessageDialog(null, mensaje);
+
+                    }
+
                 }
             } else if (opcion == 3) {
 
