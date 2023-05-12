@@ -99,6 +99,8 @@ public class Lab2P4_Equipo4 {
                 }
 
             } else if (opcion == 4) {
+                
+                
 
             } else if (opcion == 5) {
 

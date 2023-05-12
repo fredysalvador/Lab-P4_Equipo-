@@ -4,10 +4,35 @@
  */
 package lab2p4_equipo4;
 
+import java.util.List;
+
 /**
  *
  * @author Fredy Salvador
  */
-public class Aeroespacial {
+public class Aeroespacial extends Transportes{
+
+private String Tipo_comb;
+
+
+
+
+
+
+    public Aeroespacial(){ 
+    super();
+    }
+
+   
+
+
+
+    
+    
+    
+    
+    
+    
+    
     
 }
