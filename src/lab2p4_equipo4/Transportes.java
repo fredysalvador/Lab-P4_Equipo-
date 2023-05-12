@@ -12,9 +12,9 @@ import java.util.List;
  * @author Fredy Salvador
  */
 public class Transportes {
-    private Double capcTant;
-    private Double CantMaxKmTanLle; 
-    private List<String> Primates; 
+    public Double capcTant;
+    public Double CantMaxKmTanLle; 
+    public List<String> Primates; 
 
     public Transportes(){
     }
@@ -52,8 +52,9 @@ public class Transportes {
 
     @Override
     public String toString() {
-        return "Transportes -" + "capcTant=" + capcTant + ", CantMaxKmTanLle=" + CantMaxKmTanLle + ", Primates=" + Primates + '}';
+        return "Transportes{" + "capcTant=" + capcTant + ", CantMaxKmTanLle=" + CantMaxKmTanLle + ", Primates=" + Primates + '}';
     }
+
     
     
     
