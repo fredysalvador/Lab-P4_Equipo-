@@ -21,11 +21,11 @@ public class Lab2P4_Equipo4 {
         int opcion = 0;
         
         while (opcion != 6){
-        opcion = Integer.parseInt(JOptionPane.showInputDialog("1-Area de Seres Vivos\n2-Area de Planetas\n3-Area de TRansporte\n4-Inicio de Sesion\n5-Salir"));
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("1-Area de Seres Vivos\n2-Area de Planetas\n3-Area de Transporte\n4-Inicio de Sesion\n5-Salir"));
         
         if(opcion == 1){
         
-        
+            
         
         }else if (opcion == 2){
         
