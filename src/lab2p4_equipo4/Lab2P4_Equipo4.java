@@ -38,7 +38,7 @@ public class Lab2P4_Equipo4 {
         
          if(menu == 1){
          
-         Double capTan = 
+         //Double capTan = 
          
          }else if (menu == 2){
          
