@@ -50,16 +50,6 @@ public class Transportes {
         this.Primates = Primates;
     }
 
-    @Override
-    public String toString() {
-        return "Transportes{" + "capcTant=" + capcTant + ", CantMaxKmTanLle=" + CantMaxKmTanLle + ", Primates=" + Primates + '}';
-    }
 
-    
-    
-    
-    
-    
-    
     
 }

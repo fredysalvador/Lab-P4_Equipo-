@@ -60,7 +60,7 @@ public class Lab2P4_Equipo4 {
                             boolean valor = (seleccion == 0) ? true : false;
                             
                             
-                            Aeroespacial t = new Aeroespacial();
+                            Aeroespacial t = new Aeroespacial(TipoCom, valor, capTan, cantmaxkm, null);
 
                             transportes.add(t);
 
@@ -71,7 +71,7 @@ public class Lab2P4_Equipo4 {
 
                             String Listaprim = "0";
 
-                            Aeronormal c = new Aeronormal();
+                            Aeronormal c = new Aeronormal(menu, 0, tipodato, capTan, cantmaxkm, null);
 
                             transportes.add(c);
 
