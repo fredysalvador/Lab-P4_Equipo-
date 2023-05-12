@@ -38,14 +38,14 @@ public class Lab2P4_Equipo4 {
                             + "2-Agregar un Primate"
                             + "\n3-Salir"));
 
-                    if (opcion == 1) {
+                    if (eleccion == 1) {
                         Ingenieros I = new Ingenieros(Integer.parseInt(JOptionPane.showInputDialog("Ingrese su RRHH:")),
                                 JOptionPane.showInputDialog("Ingrese su Nombre:"), JOptionPane.showInputDialog("Ingrese su Grupo Sanguineo:"),
                                 JOptionPane.showInputDialog("Ingrese su Sexo:"), Double.valueOf(JOptionPane.showInputDialog("Ingrese su Altura:")),
                                 Integer.parseInt(JOptionPane.showInputDialog("Ingrese su Peso:")));
                         Ingenieros.add(I);
                     }
-                    if (opcion == 2) {
+                    if (eleccion == 2) {
                         Primates P = new Primates(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cantidad de Comida:")), Double.valueOf(JOptionPane.showInputDialog("Ingrese Cuanta Comida Come Por KM: ")),
                                 JOptionPane.showInputDialog("Ingrese el Lugar de Nacimiento:"), JOptionPane.showInputDialog("Ingrese la Cantidad de Comida:"),
                                 JOptionPane.showInputDialog("Ingrese su Grupo Sanguineo:"), JOptionPane.showInputDialog("Ingrese su Sexo:"), Double.valueOf(JOptionPane.showInputDialog("Ingrese su Altura:")),
@@ -58,7 +58,7 @@ public class Lab2P4_Equipo4 {
                 while (eleccion != 2) {
                     eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Planeta\n"
                             + "\n2-Salir"));
-                    if (opcion == 1) {
+                    if (eleccion == 1) {
                         Planetas PL = new Planetas(JOptionPane.showInputDialog("Ingrese el Nombre del Planeta: "),
                                 Double.valueOf(JOptionPane.showInputDialog("Ingrese la Distancia desde la Tierra")));
                         Planetas.add(PL);
