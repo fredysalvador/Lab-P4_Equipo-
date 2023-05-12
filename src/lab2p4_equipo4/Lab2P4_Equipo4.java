@@ -22,16 +22,48 @@ public class Lab2P4_Equipo4 {
         //  rrayList<transportes> transportes = new ArrayList();
         // ArrayList Estaciones = new ArrayList();
         ArrayList<Transportes> transportes = new ArrayList();
+        ArrayList Ingenieros = new ArrayList();
+        ArrayList Primates = new ArrayList();
+        ArrayList Planetas = new ArrayList();
 
         int opcion = 0;
 
-        while (opcion != 6) {
+        while (opcion != 5) {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("1-Area de Seres Vivos\n2-Area de Planetas\n3-Area de Transporte\n4-Inicio de Sesion\n5-Salir"));
 
             if (opcion == 1) {
+                int eleccion = 0;
+                while (eleccion != 3) {
+                    eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Ingeniero\n"
+                            + "2-Agregar un Primate"
+                            + "\n3-Salir"));
 
+                    if (opcion == 1) {
+                        Ingenieros I = new Ingenieros(Integer.parseInt(JOptionPane.showInputDialog("Ingrese su RRHH:")),
+                                JOptionPane.showInputDialog("Ingrese su Nombre:"), JOptionPane.showInputDialog("Ingrese su Grupo Sanguineo:"),
+                                JOptionPane.showInputDialog("Ingrese su Sexo:"), Double.valueOf(JOptionPane.showInputDialog("Ingrese su Altura:")),
+                                Integer.parseInt(JOptionPane.showInputDialog("Ingrese su Peso:")));
+                        Ingenieros.add(I);
+                    }
+                    if (opcion == 2) {
+                        Primates P = new Primates(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cantidad de Comida:")), Double.valueOf(JOptionPane.showInputDialog("Ingrese Cuanta Comida Come Por KM: ")),
+                                JOptionPane.showInputDialog("Ingrese el Lugar de Nacimiento:"), JOptionPane.showInputDialog("Ingrese la Cantidad de Comida:"),
+                                JOptionPane.showInputDialog("Ingrese su Grupo Sanguineo:"), JOptionPane.showInputDialog("Ingrese su Sexo:"), Double.valueOf(JOptionPane.showInputDialog("Ingrese su Altura:")),
+                                Integer.parseInt(JOptionPane.showInputDialog("Ingrese su Peso:")));
+                        Primates.add(P);
+                    }
+                }
             } else if (opcion == 2) {
-
+                int eleccion = 0;
+                while (eleccion != 2) {
+                    eleccion = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar un Planeta\n"
+                            + "\n2-Salir"));
+                    if (opcion == 1) {
+                        Planetas PL = new Planetas(JOptionPane.showInputDialog("Ingrese el Nombre del Planeta: "),
+                                Double.valueOf(JOptionPane.showInputDialog("Ingrese la Distancia desde la Tierra")));
+                        Planetas.add(PL);
+                    }
+                }
             } else if (opcion == 3) {
 
                 int menu = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar Nave\n2-Eliminar Nave\n3-Actualizar Nave\n4-Listar Naves"));
@@ -58,8 +90,7 @@ public class Lab2P4_Equipo4 {
 
                             // Asigna el valor booleano correspondiente según la opción seleccionada
                             boolean valor = (seleccion == 0) ? true : false;
-                            
-                            
+
                             Aeroespacial t = new Aeroespacial(TipoCom, valor, capTan, cantmaxkm, null);
 
                             transportes.add(t);
@@ -106,13 +137,13 @@ public class Lab2P4_Equipo4 {
 
                     if (pos >= 0 && pos < transportes.size()) {
                         if (transportes.get(pos) instanceof Aeroespacial) {
-                            ((Aeroespacial) transportes.get(pos)).setCapcTant(Double.valueOf(JOptionPane.showInputDialog("Ingrese el nombre de la bebida: \n")));
-                            ((Aeroespacial) transportes.get(pos)).setCantMaxKmTanLle(Double.valueOf(JOptionPane.showInputDialog("Ingrese el precio de la bebida: \n")));
+                            ((Aeroespacial) transportes.get(pos)).setCapcTant(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cacpacidad del Tanque: \n")));
+                            ((Aeroespacial) transportes.get(pos)).setCantMaxKmTanLle(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cantidad maxima de Km con Tanque lleno: \n")));
                             ((Aeroespacial) transportes.get(pos)).setPrimates(null);
 
                         } else if (transportes.get(pos) instanceof Aeronormal) {
-                            ((Aeronormal) transportes.get(pos)).setCapcTant(Double.valueOf(JOptionPane.showInputDialog("Ingrese el nombre de la bebida: \n")));
-                            ((Aeronormal) transportes.get(pos)).setCantMaxKmTanLle(Double.valueOf(JOptionPane.showInputDialog("Ingrese el precio de la bebida: \n")));
+                            ((Aeronormal) transportes.get(pos)).setCapcTant(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cacpacidad del Tanque: \n")));
+                            ((Aeronormal) transportes.get(pos)).setCantMaxKmTanLle(Double.valueOf(JOptionPane.showInputDialog("Ingrese la Cantidad maxima de Km con Tanque lleno: \n")));
                             ((Aeronormal) transportes.get(pos)).setPrimates(null);
 
                         }
@@ -138,8 +169,6 @@ public class Lab2P4_Equipo4 {
             } else if (opcion == 4) {
 
             } else if (opcion == 5) {
-
-            } else if (opcion == 6) {
 
             }
 

@@ -52,7 +52,7 @@ public class Aeronormal extends Transportes {
     
         @Override
     public String toString() {
-        return "Transportes{" + "capcTant=" + capcTant + ", CantMaxKmTanLle=" + CantMaxKmTanLle + ", Primates=" + Primates + ",cant_pas=" + cant_pas + ", longit=" + longit + ", cant_motores=" + cant_motores + '}';
+        return "AeroNormal -" + "   capcTant:" + capcTant + ",    CantMaxKmTanLle:" + CantMaxKmTanLle + ",    Primates:" + Primates + ",   cant_pas:" + cant_pas + ",    longit:" + longit + ",    cant_motores:" + cant_motores + ' ';
     }
     
     

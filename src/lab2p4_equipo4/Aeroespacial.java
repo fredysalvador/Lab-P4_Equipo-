@@ -45,7 +45,7 @@ private boolean combatop;
    
     @Override
     public String toString() {
-        return "Transportes -" + "capcTant=" + capcTant + ", CantMaxKmTanLle=" + CantMaxKmTanLle + ", Primates=" + Primates + ",Tipo_comb=" + Tipo_comb + ", combatop=" + combatop + '}';
+        return "AeroEspacial -" + "   capcTant:" + capcTant + ",    CantMaxKmTanLle:" + CantMaxKmTanLle + ",    Primates:" + Primates + ",    Tipo_comb:" + Tipo_comb + ",    combatop:" + combatop + ' ';
     }
     
     
