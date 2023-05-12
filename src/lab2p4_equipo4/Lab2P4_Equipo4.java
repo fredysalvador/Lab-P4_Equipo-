@@ -33,7 +33,30 @@ public class Lab2P4_Equipo4 {
         
         }else if (opcion == 3){
         
+         
+         int menu = Integer.parseInt(JOptionPane.showInputDialog("1-Agregar Nave\n2-Eliminar Nave\n3-Actualizar Nave\n5-Listar Naves"));
         
+         if(menu == 1){
+         
+         Double capTan = 
+         
+         }else if (menu == 2){
+         
+             
+         
+         }else if (menu == 3){
+         
+         
+         
+         }else if (menu == 4){
+         
+         
+         }else if (menu == 5){
+         
+             
+             
+         }             
+            
         
         }else if (opcion == 4){
         
